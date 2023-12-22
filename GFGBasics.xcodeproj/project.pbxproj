@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1702E20C2B242DDF0043A947 /* GFGBasics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GFGBasics; sourceTree = BUILT_PRODUCTS_DIR; };
 		1702E20F2B242DDF0043A947 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		17E1C5BE2B35647D00B389DA /* DynamicProgramming.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicProgramming.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				1702E20F2B242DDF0043A947 /* main.cpp */,
+				17E1C5BE2B35647D00B389DA /* DynamicProgramming.h */,
 			);
 			path = GFGBasics;
 			sourceTree = "<group>";
