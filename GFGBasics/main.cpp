@@ -9,7 +9,7 @@
 #include <set>
 #include <vector>
 #include <unordered_map>
-#include "DynamicProgramming.h"
+#include "Recursion.h"
 
 using namespace::std;
 
@@ -580,5 +580,14 @@ void printFibb(int n) {
    
 }
 int main() {
-    decreasing(5);
+   //  string str = BinaryString(4);
+    // noconsecutive(str, 0);
+    print();
 }
+
+
+// MARK: Binary String
+/*
+ Count the number of Binary string with no consecutive one that
+ can be formed using a binary string of length N
+ */
