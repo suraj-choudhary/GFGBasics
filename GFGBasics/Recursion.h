@@ -220,7 +220,7 @@ void countStrings(int n, string out1, int last_digit) {
     }
 }
 
-void print() {
+void coutingString() {
     countStrings(2, "", 0);
 
 }
@@ -262,5 +262,117 @@ void noconsecutive(string str, int k) {
             }
         }
     }
+}
+
+
+/// MARK: Tower of hanoi
+
+
+
+/// MARK: Friends paring problem:
+
+/*
+ given n friends who want to go to party, each can remain single or can be paired
+ up with some other friend.each can be paired only once. find out the total number of
+ ways in which friends can remain single or can be paired up.
+ 
+ f(n) = f(n - 1) + f(n - 2)
+ */
+
+
+/// Description
+/// - Parameter n: n description
+int FriendProblem(int N) {
     
+    if(N == 0 || N == 1) {
+        return 1;
+    } else {
+        int count = FriendProblem(N - 1) + (N - 1) * FriendProblem(N - 1);
+        return count;
+    }
+    return 0;
+}
+
+
+/// Description
+/// - Parameter n: n description
+int friendPairedUp(int n) {
+    
+    if(n == 0 || n == 1) {
+        return n;
+    }
+    
+    int count = friendPairedUp(n - 1) + (n - 1) * friendPairedUp(n - 2);
+    return count;
+    
+}
+
+
+/// MARK: Practice:
+/// - Parameters:
+///   - str: str description
+///   - k: k description
+
+void permutation(string str, int k) {
+    static int A[10] = {0};
+    static char res[10] = {};
+    
+    if(str[k] == '\0') {
+        res[k] = '\0';
+        printf("%s ", res);
+    } else {
+        for(int i = 0; str[i] != '\0'; i++) {
+            if(A[i] == 0) {
+                A[i] = 1;
+                res[k] = str[i];
+                permutation(str, k + 1);
+                A[i] = 0;
+            }
+        }
+    }
+}
+
+void mermutationMain() {
+    string str = "ABC";
+    permutation(str, 0);
+}
+
+// MARK: Binary consecutive string
+
+void mainPared() {
+    mermutationMain();
+}
+
+
+// MARK: Backtracking:
+
+/*
+ Finding subset of string "abc"
+ 
+ ans: a, b, c, ab, ac, bc, abc
+ */
+
+void findSubset(char *input, char *output, int i, int j) {
+    if(input[i] == '\0') {
+        output[j] = '\0';
+        cout<<output<<endl;
+        return;
+    }
+    //include ith letter
+    output[j] = input[i];
+    findSubset(input, output, i + 1, j + 1);
+    
+    
+    findSubset(input, output, i + 1, j);
+
+}
+
+void getAllSubSet() {
+    char input[100];
+    char output[100];
+    cout<<"Enter your input:\n";
+    cin>>input;
+    findSubset(input, output, 0, 0);
+    
+    return;
 }

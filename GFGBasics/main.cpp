@@ -10,6 +10,7 @@
 #include <vector>
 #include <unordered_map>
 #include "Recursion.h"
+#include "GFGQuestion.h"
 
 using namespace::std;
 
@@ -579,15 +580,10 @@ struct Pair getMinMax(int arr[], int low, int high) {
 void printFibb(int n) {
    
 }
+
+
+// MARK: Main method ---------------------------
+
 int main() {
-   //  string str = BinaryString(4);
-    // noconsecutive(str, 0);
-    print();
+    getAllSubSet();
 }
-
-
-// MARK: Binary String
-/*
- Count the number of Binary string with no consecutive one that
- can be formed using a binary string of length N
- */
