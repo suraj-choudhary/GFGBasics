@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		1702E20C2B242DDF0043A947 /* GFGBasics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GFGBasics; sourceTree = BUILT_PRODUCTS_DIR; };
 		1702E20F2B242DDF0043A947 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		17A20AD82B55C937006E200A /* GFGQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFGQuestion.h; sourceTree = "<group>"; };
 		17E1C5BE2B35647D00B389DA /* Recursion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Recursion.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,6 +61,7 @@
 			children = (
 				1702E20F2B242DDF0043A947 /* main.cpp */,
 				17E1C5BE2B35647D00B389DA /* Recursion.h */,
+				17A20AD82B55C937006E200A /* GFGQuestion.h */,
 			);
 			path = GFGBasics;
 			sourceTree = "<group>";
